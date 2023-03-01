@@ -1,0 +1,162 @@
+﻿.hero_container {
+  padding: 100px 20px 132px 20px;
+  .hero_content {
+    .section {
+      h1 {
+        font-family: "Lusitana";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 78px;
+        color: #000000;
+      }
+      p {
+        margin-top: 30px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 50px;
+        color: #000000;
+      }
+      button {
+        margin-top: 50px;
+        width: 360px;
+        height: 79px;
+        background: #761919;
+        border-radius: 30px;
+        border: none;
+        font-family: "Lusitana";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 39px;
+        color: #ffffff;
+      }
+    }
+    .banner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -2;
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .hero_container {
+    .hero_content {
+      .section {
+        h1 {
+          font-size: 40px;
+          line-height: 55px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 30px;
+        }
+        button {
+          width: 180px;
+          height: 60px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero_container {
+    .hero_content {
+      .banner {
+        img {
+          max-width: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .hero_container {
+    .hero_content {
+      .section {
+        h1 {
+          font-size: 35px;
+          line-height: 45px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 20px;
+        }
+        button {
+          width: 140px;
+          height: 50px;
+          font-size: 16px;
+        }
+      }
+      .banner {
+        img {
+          max-width: 350px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero_container {
+    padding: 10px;
+    .hero_content {
+      .section {
+        h1 {
+          font-size: 22px;
+          line-height: 29px;
+        }
+        p {
+          margin-top: 10px;
+          font-size: 14px;
+          line-height: 20px;
+        }
+        button {
+          margin-top: 30px;
+          width: 134px;
+          height: 22px;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      .banner {
+        img {
+          width: 282px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero_container {
+    padding: 10px;
+    .hero_content {
+      .banner {
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero_container {
+    padding: 10px;
+    .hero_content {
+      .banner {
+        img {
+          width: 170px;
+        }
+      }
+    }
+  }
+}

@@ -4,13 +4,9 @@
     display: flex;
     justify-content: space-between;
     height: 359.95px;
-    padding: 50px 100px 0 100px;
-    .logo {
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
+    padding: 50px 140px 0 140px;
+    gap: 60px;
+    text-align: center;
     .society {
       h1 {
         font-family: "Lusitana";
@@ -26,8 +22,51 @@
         justify-content: center;
         gap: 14px;
         img {
+          mix-blend-mode: normal;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .footer_container {
+    .footer {
+      justify-content: space-around;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer_container {
+    .footer {
+      padding: 50px 100px 0 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .footer_container {
+    .footer {
+      .logo {
+        img {
+          width: 210px;
+          height: 70px;
+        }
+      }
+      .society {
+        h1 {
+          font-size: 24px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer_container {
+    .footer {
+      flex-wrap: wrap;
     }
   }
 }
