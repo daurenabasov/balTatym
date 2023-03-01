@@ -1,0 +1,33 @@
+﻿.footer_container {
+  background: #761919;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    height: 359.95px;
+    padding: 50px 100px 0 100px;
+    .logo {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .society {
+      h1 {
+        font-family: "Lusitana";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 29px;
+        line-height: 38px;
+        color: #ffffff;
+      }
+      .contacts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        img {
+        }
+      }
+    }
+  }
+}

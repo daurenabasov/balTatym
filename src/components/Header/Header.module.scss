@@ -1,0 +1,34 @@
+﻿.header {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin-top: 35px;
+  justify-content: center;
+  nav {
+    ul {
+      gap: 30px;
+      display: flex;
+      list-style: none;
+      align-items: center;
+      li {
+        font-family: "Istok Web";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 29px;
+        text-align: center;
+        color: #000000;
+      }
+    }
+  }
+  .busket {
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 127px;
+  }
+}
