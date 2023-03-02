@@ -18,6 +18,10 @@
     .slider {
       margin-top: 87px;
       width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 35px;
     }
   }
 }
@@ -25,6 +29,7 @@
 @media screen and (max-width: 570px) {
   .production_container {
     .production {
+      padding: 0;
       h1 {
         font-size: 40px;
         line-height: 50px;

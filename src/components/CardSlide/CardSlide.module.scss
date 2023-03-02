@@ -1,0 +1,137 @@
+﻿.card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  img {
+    margin: 0 auto;
+  }
+  .card_info {
+    display: flex;
+    justify-content: space-between;
+    .first_block {
+      display: flex;
+      flex-direction: column;
+      padding-top: 120px;
+      h1 {
+        font-family: "Lusitana";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 45px;
+        color: #000000;
+      }
+      p {
+        margin-top: 10px;
+        display: flex;
+      }
+    }
+    .second_block {
+      position: absolute;
+      bottom: 33px;
+      right: 14px;
+      span {
+        font-family: "Lusitana";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 45px;
+        color: #000000;
+      }
+      button {
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #003049;
+        border-radius: 20px;
+        width: 233.64px;
+        height: 52.91px;
+        border: none;
+        font-family: "Lusitana";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 39px;
+        color: #ffffff;
+        gap: 10px;
+        img {
+          width: 20px;
+          height: 20px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    .card_info {
+      .first_block {
+        padding-top: 20px;
+      }
+      .second_block {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .card {
+    .card_info {
+      .first_block {
+        h1 {
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+      .second_block {
+        button {
+          margin-top: 7px;
+          font-size: 20px;
+          line-height: 25px;
+          width: 150.64px;
+          height: 34.91px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    .card_info {
+      .first_block {
+        h1 {
+          font-size: 20px;
+          line-height: 25px;
+        }
+        p {
+          margin-top: 0;
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+      .second_block {
+        bottom: 10px;
+        span {
+          font-size: 25px;
+          line-height: 30px;
+        }
+        button {
+          font-size: 15px;
+          line-height: 20px;
+          width: 110.64px;
+          height: 30.91px;
+          img {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
