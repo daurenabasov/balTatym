@@ -7,6 +7,7 @@ import slide1 from '../../assets/slide1.png'
 import slide2 from '../../assets/slide2.png'
 import mini from '../../assets/mini_busket.png'
 
+
 const CardSlide = () => {
     const slides1 = [
         {

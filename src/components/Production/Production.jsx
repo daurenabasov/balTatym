@@ -3,8 +3,8 @@ import React from 'react';
 import './Production.css'
 import CardSlide from '../CardSlide/CardSlide';
 
-const Production = () => {
 
+const Production = () => {
     return (
         <>
             <div className={s.production_container}>
