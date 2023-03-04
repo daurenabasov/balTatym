@@ -1,9 +1,10 @@
 import React from 'react';
-import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Header/Header';
-import Hero from '../../components/Hero/Hero';
-import History from '../../components/History/History';
-import Production from '../../components/Production/Production';
+import Footer from './HomeComponents/Footer/Footer';
+import Header from '../Home/HomeComponents/Header/Header';
+import Hero from '../Home/HomeComponents/Hero/Hero';
+import History from '../Home/HomeComponents/History/History';
+import Production from '../Home/HomeComponents/Production/Production';
+import Uniqueness from '../Home/HomeComponents/Uniqueness/Uniqueness';
 
 
 const HomePage = () => {
@@ -13,6 +14,7 @@ const HomePage = () => {
             <Hero />
             <Production />
             <History />
+            <Uniqueness />
             <Footer />
         </>
     );

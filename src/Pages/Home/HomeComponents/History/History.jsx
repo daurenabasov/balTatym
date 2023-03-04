@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 import s from './History.module.scss'
-import banner2 from '../../assets/banner2.png'
+import banner2 from '../../../../Assets/banner2.png'
 
 const History = () => {
     return (

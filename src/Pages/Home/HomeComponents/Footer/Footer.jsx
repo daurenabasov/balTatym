@@ -1,9 +1,9 @@
 ﻿import React from 'react';
 import s from './Footer.module.scss'
-import facebook from '../../assets/facebook.png'
-import twitter from '../../assets/twitter.png'
-import instagram from '../../assets/instagram.png'
-import footer_logo from '../../assets/footer_logo.png'
+import facebook from '../../../../Assets/facebook.png'
+import twitter from '../../../../Assets/twitter.png'
+import instagram from '../../../../Assets/instagram.png'
+import footer_logo from '../../../../Assets/footer_logo.png'
 
 const Footer = () => {
     return (

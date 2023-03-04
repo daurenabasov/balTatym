@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 import s from './Hero.module.scss'
-import banner from '../../assets/banner.png'
+import banner from '../../../../Assets/banner.png'
 
 const Hero = () => {
     return (
