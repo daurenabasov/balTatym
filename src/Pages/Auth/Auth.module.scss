@@ -1,0 +1,137 @@
+#authContainer {
+  padding: 0rem 1rem;
+  margin-top: 5%;
+}
+
+.authImg {
+  background-image: url("../../Assets/registrBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 100;
+  min-width: 436.81px;
+  height: 470.64px;
+
+  // @media (width <= 1044px) {
+  //   position: relative;
+  // }
+}
+
+.authWrapper {
+  display: flex;
+  gap: 10%;
+  align-items: center;
+
+  .authForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    // @media (width <= 1044px) {
+    //   position: absolute;
+    //   z-index: 100;
+    // }
+    h1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+
+      color: #000000;
+    }
+
+    .authRoute {
+      display: flex;
+      gap: 33px;
+      align-items: center;
+    }
+    h3:first-child {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      display: flex;
+      align-items: center;
+      text-decoration-line: underline;
+
+      color: #000000;
+    }
+    h3:last-child {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      display: flex;
+      align-items: center;
+
+      color: #000000;
+
+      opacity: 0.4;
+      position: relative;
+      cursor: pointer;
+
+      &::after {
+        background: none repeat scroll 0 0 transparent;
+        margin-bottom: -20px;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #000;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+        color: #000;
+      }
+
+      &:hover::after {
+        width: 100%;
+        left: 0;
+        color: #000;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      input {
+        border: 2px solid #878787;
+        padding: 20px 110px;
+        border-radius: 4px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #878787;
+      }
+      button {
+        background: #761919;
+        border-radius: 4px;
+        padding: 16px 24px;
+
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #ffffff;
+        border: none;
+
+        &:hover {
+          background: #cf6f00;
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}
