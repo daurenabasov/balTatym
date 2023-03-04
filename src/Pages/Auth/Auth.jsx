@@ -3,6 +3,7 @@ import s from "./Auth.module.scss";
 import { useNavigate } from "react-router-dom";
 import { AUTHAPI } from "../../Constants/api";
 import axios from "axios";
+import RegisterBackground from "../../Assets/registrBackground.png";
 
 const Auth = () => {
   const [username, setUsername] = useState("");
@@ -38,7 +39,7 @@ const Auth = () => {
       <main id={s.authContainer}>
         <div id="container" className={s.authWrapper}>
           <div className={s.authImg}>
-            {/* <img src={RegisterBackground} alt="img" /> */}
+            <img src={RegisterBackground} alt="img" />
           </div>
           <div className={s.authForm}>
             <h1>Добро пожаловать в Bal Tatym!</h1>

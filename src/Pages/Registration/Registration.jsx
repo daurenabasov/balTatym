@@ -41,9 +41,9 @@ const Registration = () => {
 
   return (
     <main id={s.registrationContainer}>
-      <div id="container" className={s.registrWrapper}>
+      <div className={s.registrWrapper}>
         <div className={s.registrImg}>
-          {/* <img src={RegisterBackground} alt="img" /> */}
+          <img src={RegisterBackground} alt="img" />
         </div>
         <div className={s.registerForm}>
           <h1>Добро пожаловать в Bal Tatym!</h1>
@@ -82,7 +82,6 @@ const Registration = () => {
               value={phone_number}
               onChange={(e) => setPhone_number(e.target.value)}
             />
-
             <button>Регистрация</button>
           </form>
         </div>
