@@ -4,7 +4,7 @@ import Header from '../Home/HomeComponents/Header/Header';
 import Hero from '../Home/HomeComponents/Hero/Hero';
 import History from '../Home/HomeComponents/History/History';
 import Production from '../Home/HomeComponents/Production/Production';
-import Uniqueness from '../Home/HomeComponents/Uniqueness/Uniqueness';
+import Carousel from './HomeComponents/Carousel/Carousel';
 
 
 const HomePage = () => {
@@ -14,7 +14,7 @@ const HomePage = () => {
             <Hero />
             <Production />
             <History />
-            <Uniqueness />
+            <Carousel />
             <Footer />
         </>
     );

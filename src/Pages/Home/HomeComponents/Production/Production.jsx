@@ -17,7 +17,6 @@ const Production = () => {
                         <Card />
                     </div>
                 </div>
-                <button>fdf</button>
             </div>
         </>
     );
