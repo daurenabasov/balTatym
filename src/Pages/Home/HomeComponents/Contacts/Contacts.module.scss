@@ -1,0 +1,66 @@
+﻿h1 {
+  text-align: center;
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+.contacts {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  .first {
+    display: flex;
+    flex-direction: column;
+    .contacts {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 40px;
+      padding-bottom: 100px;
+      .number {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .location {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+  .second {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      input {
+        opacity: 0.8;
+        border: 1px solid #cecece;
+        border-radius: 4px;
+        width: 517px;
+        height: 66px;
+        padding-left: 20px;
+      }
+      button {
+        width: 249px;
+        height: 66px;
+        background: #fdbf00;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        border: none;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        opacity: 0.8;
+      }
+    }
+  }
+}

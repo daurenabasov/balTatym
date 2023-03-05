@@ -36,7 +36,7 @@ const Header = () => {
                 <Link>Полезные статьи</Link>
               </li>
               <li>
-                <Link>Контакты</Link>
+                <Link to="/contacts">Контакты</Link>
               </li>
             </ul>
           </nav>
