@@ -1,0 +1,61 @@
+.card {
+  background: #ffffff;
+  box-shadow: 0px 4px 6px rgba(207, 111, 0, 0.4);
+  border-radius: 8px;
+  width: 350px;
+  height: 300px;
+  padding: 20px;
+
+  .cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    h4 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+
+      color: #000000;
+    }
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+
+      color: #381903;
+    }
+  }
+  button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+
+    /* Black */
+
+    color: #000000;
+
+    background: #fdbf00;
+    border-radius: 20px;
+    width: 140px;
+    height: 35px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
