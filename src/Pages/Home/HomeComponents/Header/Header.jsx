@@ -5,6 +5,7 @@ import busket from "../../../../Assets/busket.png";
 import registrImg from "../../../../Assets/registrAndAuth.png";
 import languageImg from "../../../../Assets/language.png";
 import { Link, useNavigate } from "react-router-dom";
+import Footer from "../Footer/Footer.jsx";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -36,7 +37,7 @@ const Header = () => {
                 <Link>Полезные статьи</Link>
               </li>
               <li>
-                <Link>Контакты</Link>
+                <Link to={Footer}>Контакты</Link>
               </li>
             </ul>
           </nav>

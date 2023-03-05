@@ -6,6 +6,7 @@ import Auth from "../Pages/Auth/Auth";
 import NotFound from "../Pages/404/NotFound";
 import Products from "../Pages/Products/Products";
 import ProductId from "../Pages/Products/ProductId/ProductId";
+import OurHistoryPage from "../Pages/OurHistory/OurHistory.jsx";
 
 const RoutesApp = () => {
   return (
@@ -16,6 +17,7 @@ const RoutesApp = () => {
       <Route path="*" element={<NotFound />} />
       <Route path="/products" element={<Products />} />
       <Route path="/products/:id" element={<ProductId />} />
+       <Route path="/our-history" element={<OurHistoryPage />} />
     </Routes>
   );
 };
