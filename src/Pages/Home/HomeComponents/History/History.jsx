@@ -1,8 +1,16 @@
 ﻿import React from 'react';
 import s from './History.module.scss'
 import banner2 from '../../../../Assets/banner2.png'
+import {Link, useNavigate} from "react-router-dom";
 
 const History = () => {
+
+    const navigate = useNavigate()
+
+    const getHistory = ()=> {
+        navigate("/our-history")
+    }
+
     return (
         <>
             <div className={s.content}>
@@ -18,7 +26,7 @@ const History = () => {
                             Наша компания была основана в 1996 году, хозяйство...
                         </p>
                         <div className={s.info}>
-                            <span>подробнее</span>
+                            <span onClick={getHistory}>подробнее</span>
                         </div>
                     </div>
                 </div>
