@@ -4,6 +4,8 @@ import HomePage from "../Pages/Home/HomePage";
 import Registration from "../Pages/Registration/Registration";
 import Auth from "../Pages/Auth/Auth";
 import NotFound from "../Pages/404/NotFound";
+import Products from "../Pages/Products/Products";
+import ProductId from "../Pages/Products/ProductId/ProductId";
 
 const RoutesApp = () => {
   return (
@@ -12,6 +14,8 @@ const RoutesApp = () => {
       <Route path="/registration" element={<Registration />} />
       <Route path="/auth" element={<Auth />} />
       <Route path="*" element={<NotFound />} />
+      <Route path="/products" element={<Products />} />
+      <Route path="/products/:id" element={<ProductId />} />
     </Routes>
   );
 };

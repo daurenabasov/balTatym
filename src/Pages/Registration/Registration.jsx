@@ -4,6 +4,8 @@ import RegisterBackground from "../../Assets/registrBackground.png";
 import { REGISTERAPI } from "../../Constants/api";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Header from "../Home/HomeComponents/Header/Header";
+
 
 const Registration = () => {
   const [username, setUsername] = useState("");

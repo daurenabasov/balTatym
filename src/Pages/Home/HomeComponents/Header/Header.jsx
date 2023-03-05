@@ -26,10 +26,18 @@ const Header = () => {
         <div className={s.header}>
           <nav>
             <ul>
-              <li>О нас</li>
-              <li>Продукция</li>
-              <li>Полезные статьи</li>
-              <li>Контакты</li>
+              <li>
+                <Link>О нас</Link>
+              </li>
+              <li>
+                <Link to="/products">Продукция</Link>
+              </li>
+              <li>
+                <Link>Полезные статьи</Link>
+              </li>
+              <li>
+                <Link>Контакты</Link>
+              </li>
             </ul>
           </nav>
           <div className={s.busket}>
