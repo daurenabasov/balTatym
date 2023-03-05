@@ -42,58 +42,53 @@ const Registration = () => {
   };
 
   return (
-    <>
-      <Header />
-      <main id={s.registrationContainer}>
-        <div id="container" className={s.registrWrapper}>
-          <div className={s.registrImg}>
-            {/* <img src={RegisterBackground} alt="img" /> */}
-          </div>
-          <div className={s.registerForm}>
-            <h1>Добро пожаловать в Bal Tatym!</h1>
-            <div className={s.registerRoute}>
-              <h3 onClick={handleAuth}>Вход</h3>
-              <h3>Регистрация</h3>
-            </div>
-            <form onSubmit={postUsers}>
-              <input
-                type="text"
-                value={username}
-                placeholder="Имя пользователя"
-                onChange={(e) => setUsername(e.target.value)}
-              />
-              <input
-                type="mail"
-                placeholder="Почта"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <input
-                type="password"
-                placeholder="Пароль*"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <input
-                type="password"
-                placeholder="Повторить пароль*"
-                value={password_confirm}
-                onChange={(e) => setPassword_confirm(e.target.value)}
-              />
-              <input
-                type="number"
-                placeholder="Телефон"
-                value={phone_number}
-                onChange={(e) => setPhone_number(e.target.value)}
-              />
-
-              <button>Регистрация</button>
-            </form>
-          </div>
+    <main id={s.registrationContainer}>
+      <div className={s.registrWrapper}>
+        <div className={s.registrImg}>
+          <img src={RegisterBackground} alt="img" />
         </div>
-      </main>
-    </>
-
+        <div className={s.registerForm}>
+          <h1>Добро пожаловать в Bal Tatym!</h1>
+          <div className={s.registerRoute}>
+            <h3 onClick={handleAuth}>Вход</h3>
+            <h3>Регистрация</h3>
+          </div>
+          <form onSubmit={postUsers}>
+            <input
+              type="text"
+              value={username}
+              placeholder="Имя пользователя"
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <input
+              type="mail"
+              placeholder="Почта"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Пароль*"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Повторить пароль*"
+              value={password_confirm}
+              onChange={(e) => setPassword_confirm(e.target.value)}
+            />
+            <input
+              type="number"
+              placeholder="Телефон"
+              value={phone_number}
+              onChange={(e) => setPhone_number(e.target.value)}
+            />
+            <button>Регистрация</button>
+          </form>
+        </div>
+      </div>
+    </main>
   );
 };
 

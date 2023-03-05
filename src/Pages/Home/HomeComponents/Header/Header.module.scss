@@ -37,6 +37,15 @@
     margin-left: 127px;
     // box-shadow: 1px 1px 20px 1px rgba($color: #aaaaaa, $alpha: 1);
     gap: 30px;
+    span {
+      cursor: pointer;
+    }
+    span:hover {
+      transition: 0.1s;
+      text-decoration: underline;
+      color: #fdbf00;
+      font-size: 20px;
+    }
 
     img {
       cursor: pointer;
