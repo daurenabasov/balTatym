@@ -3,6 +3,7 @@ import s from "./Auth.module.scss";
 import { useNavigate } from "react-router-dom";
 import { AUTHAPI } from "../../Constants/api";
 import axios from "axios";
+import Header from "../Home/HomeComponents/Header/Header";
 
 const Auth = () => {
   const [username, setUsername] = useState("");
@@ -35,6 +36,7 @@ const Auth = () => {
 
   return (
     <>
+      <Header />
       <main id={s.authContainer}>
         <div id="container" className={s.authWrapper}>
           <div className={s.authImg}>
