@@ -1,11 +1,12 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ALLPRODUCTSAPI } from "../../Constants/api";
 import ProductsList from "./ProductList/ProductsList";
 import Header from "../Home/HomeComponents/Header/Header";
 import s from "./Products.module.scss";
 import Footer from "../Home/HomeComponents/Footer/Footer";
 import Loader from "../../Components/UI/Loader/Loader";
+import { Cartcontext } from "../../Context/Context";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -25,7 +26,17 @@ const Products = () => {
       setLoader(true);
     }, 4000);
     getCards();
-  }, []);
+  }, []); 
+
+
+  const Globalstate = useContext(Cartcontext)
+
+
+  const dispatch = Globalstate.dispatch
+
+  console.log(Globalstate);
+
+
 
 
   return (
@@ -37,11 +48,15 @@ const Products = () => {
             {products.map((product, idx) => (
               <ProductsList
                 key={idx}
+                handleClick={() => dispatch(
+                  { type: "ADD", payload: product })}
                 image={product.image}
                 title={product.title}
                 description={product.description}
                 price={product.price}
+
               />
+
             ))}
           </div>
           <Footer />

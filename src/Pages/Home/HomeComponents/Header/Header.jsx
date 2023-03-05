@@ -41,7 +41,11 @@ const Header = () => {
             </ul>
           </nav>
           <div className={s.busket}>
-            <img src={busket} alt="busket" />
+            <Link to="/basket">
+              <img src={busket} alt="busket" />
+
+            </Link>
+
             {token ? (
               <span onClick={logout}>Logout</span>
             ) : (
