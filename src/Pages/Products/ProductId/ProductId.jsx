@@ -5,16 +5,16 @@ import { IDPRODUCTSAPI } from "../../../Constants/api"
 
 const ProductId = (props) => {
 
-    const product = useParams();
+    const {id} = useParams();
 
     const [detail, setDetail] = useState();
 
 
     const getDetail = async () => {
-        const res = await axios.get(`${IDPRODUCTSAPI}${product.id}`);
+        const res = await axios.get(`${IDPRODUCTSAPI}${id}`);
         setDetail(res.data);
     }
-    useEffect(() => {
+    useEffect(() => {   
         getDetail()
     }, [id])
 
